@@ -1,5 +1,5 @@
 {
-  "app": "npx tsx stacks",
+  "app": "bun stacks/index.ts",
   "versionReporting": false,
   "watch": {
     "include": ["**"],
@@ -8,11 +8,11 @@
       "cdk*.json",
       "**/*.d.ts",
       "**/*.js",
-      "tsconfig.json",
-      "package*.json",
-      "yarn.lock",
+      "**/test",
       "node_modules",
-      "test"
+      "bun.lockb",
+      "tsconfig.json",
+      "package*.json"
     ]
   }
 }

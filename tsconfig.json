@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "module": "ES2022",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2022"
+    "target": "esnext",
+    "types": ["bun-types"]
   },
   "exclude": ["**/test", "cdk.out", "node_modules"],
-  "extends": "@tsconfig/node18",
+  "extends": "@tsconfig/node18/tsconfig.json",
   "include": ["stacks"]
 }

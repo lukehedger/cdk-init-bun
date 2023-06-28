@@ -1,6 +1,6 @@
 import { App } from "aws-cdk-lib";
 import { Template } from "aws-cdk-lib/assertions";
-import { test } from "vitest";
+import { test } from "bun:test";
 import { CdkStack } from "../";
 
 test("Stack has no resources", () => {

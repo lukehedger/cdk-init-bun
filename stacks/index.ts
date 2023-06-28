@@ -8,4 +8,8 @@ export class CdkStack extends Stack {
   }
 }
 
-new CdkStack(new App(), "CdkStack");
+const app = new App();
+
+new CdkStack(app, "CdkStack");
+
+app.synth();
